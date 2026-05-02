@@ -46,4 +46,10 @@ Open: [http://localhost:5000/dashboard](http://localhost:5000/dashboard)
 
 * Basic Auth = **Base64 encoding (not encryption)**
 * Credentials can be easily decoded if intercepted
+  * Go to Network tab --> In Request Headers --> `Authorization:Basic aHJtOmg=`
+  * ```bash
+bitun@bitcn:~/Documents/Jan2026/TDS/auth$ echo -n "hrm:h" | base64
+aHJtOmg=
+bitun@bitcn:~/Documents/Jan2026/TDS/auth$ echo -n "aHJtOmgK" | base64 --decode
+hrm:h  ```
 * Always use **HTTPS** in production
