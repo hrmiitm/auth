@@ -51,5 +51,6 @@ Open: [http://localhost:5000/dashboard](http://localhost:5000/dashboard)
 bitun@bitcn:~/Documents/Jan2026/TDS/auth$ echo -n "hrm:h" | base64
 aHJtOmg=
 bitun@bitcn:~/Documents/Jan2026/TDS/auth$ echo -n "aHJtOmgK" | base64 --decode
-hrm:h  ```
+hrm:h
+```
 * Always use **HTTPS** in production
